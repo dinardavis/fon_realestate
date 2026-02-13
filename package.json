@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dinardavis.github.io/fon_realestate",
   "name": "fon-real-estate",
   "version": "1.0.0",
   "description": "Fon Real Estate - Property listings website",
@@ -10,12 +11,14 @@
     "react-router-dom": "^6.20.0"
   },
   "scripts": {
+    "predeploy": "npm run build","deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "react-scripts": "5.0.1"
   },
   "browserslist": {
