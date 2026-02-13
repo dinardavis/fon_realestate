@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fon_realestate/static/css/main.6f06ef7e.css",
+    "main.js": "/fon_realestate/static/js/main.27e2d1db.js",
+    "index.html": "/fon_realestate/index.html",
+    "main.6f06ef7e.css.map": "/fon_realestate/static/css/main.6f06ef7e.css.map",
+    "main.27e2d1db.js.map": "/fon_realestate/static/js/main.27e2d1db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f06ef7e.css",
+    "static/js/main.27e2d1db.js"
+  ]
+}
