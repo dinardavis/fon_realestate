@@ -1,0 +1,53 @@
+.buy-page {
+  min-height: calc(100vh - 70px);
+}
+
+.hero-gradient-container {
+  background: linear-gradient(135deg, #fdf2e5 0%, #dbebf8 100%);
+  padding: 40px 0;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.buy-hero {
+  color: #333;
+  padding: 0px 20px 30px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.buy-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.buy-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.search-bar-page-wrap {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .buy-hero {
+    padding: 30px 15px 20px;
+  }
+
+  .buy-hero h1 {
+    font-size: 28px;
+  }
+
+  .buy-hero p {
+    font-size: 16px;
+  }
+
+  .search-bar-page-wrap {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
