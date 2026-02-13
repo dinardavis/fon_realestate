@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { translations } from '../translations';
+import { baseUrl } from '../config';
 import './Footer.css';
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className="footer-section">
             <Link to="/" className="footer-logo">
               <img 
-                src="/main-logo.png" 
+                src={`${baseUrl}/main-logo.png`} 
                 alt="Fon Real Estate"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/200x60?text=Fon+Real+Estate';
@@ -44,11 +45,11 @@ const Footer = () => {
             <h3>{language === 'th' ? 'ติดต่อ' : 'Contact'}</h3>
             <div className="footer-contact-qr">
               <div className="footer-qr-item">
-                <img src="/font_whatsapp.png" alt="WhatsApp" />
+                <img src={`${baseUrl}/font_whatsapp.png`} alt="WhatsApp" />
                 <span>WhatsApp</span>
               </div>
               <div className="footer-qr-item">
-                <img src="/fon_lineapp.png" alt="Line" />
+                <img src={`${baseUrl}/fon_lineapp.png`} alt="Line" />
                 <span>Line</span>
               </div>
             </div>

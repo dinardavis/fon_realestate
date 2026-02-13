@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { translations } from '../translations';
+import { baseUrl } from '../config';
 import { FaEnvelope } from 'react-icons/fa';
 import './ContactCard.css';
 
@@ -14,7 +15,7 @@ const ContactCard = () => {
       <div className="contact-card-image-copy">
         <div className="contact-card-image">
           <img
-            src="/fon_image.jpg"
+            src={`${baseUrl}/fon_image.jpg`}
             alt="Fon Porpirun"
             onError={(e) => {
               e.target.src = 'https://via.placeholder.com/150';
@@ -32,11 +33,11 @@ const ContactCard = () => {
       </div>
       <div className="contact-card-qr">
         <div className="contact-qr-item">
-          <img src="/font_whatsapp.png" alt="WhatsApp" />
+          <img src={`${baseUrl}/font_whatsapp.png`} alt="WhatsApp" />
           <span>WhatsApp</span>
         </div>
         <div className="contact-qr-item">
-          <img src="/fon_lineapp.png" alt="Line" />
+          <img src={`${baseUrl}/fon_lineapp.png`} alt="Line" />
           <span>Line</span>
         </div>
       </div>

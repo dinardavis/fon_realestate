@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { properties } from '../data/properties';
 import { useApp } from '../context/AppContext';
 import { translations } from '../translations';
+import { baseUrl } from '../config';
 import { FaEnvelope } from 'react-icons/fa';
 import './PropertyDetail.css';
 
@@ -177,7 +178,7 @@ const PropertyDetail = () => {
                 <div className="agent-section-image-copy">
                   <div className="agent-section-image">
                     <img
-                      src="/fon_image.jpg"
+                      src={`${baseUrl}/fon_image.jpg`}
                       alt="Fon Porpirun"
                       onError={(e) => {
                         e.target.src = 'https://via.placeholder.com/150';
@@ -190,11 +191,11 @@ const PropertyDetail = () => {
                 </div>
                 <div className="agent-section-qr">
                   <div className="agent-qr-item">
-                    <img src="/font_whatsapp.png" alt="WhatsApp" />
+                    <img src={`${baseUrl}/font_whatsapp.png`} alt="WhatsApp" />
                     <span>WhatsApp</span>
                   </div>
                   <div className="agent-qr-item">
-                    <img src="/fon_lineapp.png" alt="Line" />
+                    <img src={`${baseUrl}/fon_lineapp.png`} alt="Line" />
                     <span>Line</span>
                   </div>
                 </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { translations } from '../translations';
+import { baseUrl } from '../config';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
 
@@ -40,7 +41,7 @@ const Header = () => {
       <div className="header-container">
         <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
           <img 
-            src="/main-logo.png" 
+            src={`${baseUrl}/main-logo.png`} 
             alt="Fon Real Estate"
             onError={(e) => {
               e.target.src = 'https://via.placeholder.com/200x60?text=Fon+Real+Estate';

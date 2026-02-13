@@ -1,5 +1,6 @@
 import React from "react";
 import { useApp } from "../context/AppContext";
+import { baseUrl } from "../config";
 import {
   FaHome,
   FaCog,
@@ -262,10 +263,10 @@ const Sell = () => {
           <div className="services-grid">
             <div className="property-image-card">
               <img
-                src="/tropical-villa-1.png"
+                src={`${baseUrl}/tropical-villa-1.png`}
                 alt="Modern Tropical Villa with Pool"
                 onError={(e) => {
-                  e.target.src = "/tropical-villa-1.png";
+                  e.target.src = `${baseUrl}/tropical-villa-1.png`;
                 }}
               />
             </div>
@@ -307,10 +308,10 @@ const Sell = () => {
 
             <div className="property-image-card">
               <img
-                src="/tropical-villa-2.png"
+                src={`${baseUrl}/tropical-villa-2.png`}
                 alt="Luxury Multi-Level Tropical Villa"
                 onError={(e) => {
-                  e.target.src = "/tropical-villa-2.png";
+                  e.target.src = `${baseUrl}/tropical-villa-2.png`;
                 }}
               />
             </div>
@@ -324,11 +325,11 @@ const Sell = () => {
           
             <div className="contact-ribbon-inner">
               <div className="contact-ribbon-item">
-                <img src="/font_whatsapp.png" alt="WhatsApp" />
+                <img src={`${baseUrl}/font_whatsapp.png`} alt="WhatsApp" />
                 <span>WhatsApp</span>
               </div>
               <div className="contact-ribbon-item">
-                <img src="/fon_lineapp.png" alt="Line" />
+                <img src={`${baseUrl}/fon_lineapp.png`} alt="Line" />
                 <span>Line</span>
               </div>
               <div className="contact-ribbon-item">

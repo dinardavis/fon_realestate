@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { translations } from '../translations';
+import { baseUrl } from '../config';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import './Contact.css';
 
@@ -37,11 +38,11 @@ const Contact = () => {
 
               <div className="contact-qr-row">
                 <div className="contact-qr-item">
-                  <img src="/font_whatsapp.png" alt="WhatsApp" />
+                  <img src={`${baseUrl}/font_whatsapp.png`} alt="WhatsApp" />
                   <span>WhatsApp</span>
                 </div>
                 <div className="contact-qr-item">
-                  <img src="/fon_lineapp.png" alt="Line" />
+                  <img src={`${baseUrl}/fon_lineapp.png`} alt="Line" />
                   <span>Line</span>
                 </div>
               </div>
